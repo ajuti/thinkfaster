@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Time to think fast</title>
+  </head>
+
+  <body>
+    <div class="play-page flex relative items-center justify-center">
+      <div class="bg-blue-300 absolute bottom-0">
+        <div class="flex items-center">
+          <%= button_to "Refresh Shop", refresh_path, method: :post, class: "flex-none w-refresh border-2 border-indigo-500/100" %>
+          <%= button_to buy_path, method: :post, class: "flex-1 border-2 border-indigo-500/100" do%>
+            <%= hidden_field_tag :number, 1 %> 
+            <%= image_tag "champion_models/aatrox.webp", size: "208"%>
+          <% end %>
+          <%= button_to buy_path, method: :post, class: "flex-1 border-2 border-indigo-500/100" do%>
+            <%= hidden_field_tag :number, 2 %>
+            <%= image_tag "champion_models/ahri.webp", size: "208"%>
+          <% end %>
+          <%= button_to buy_path, method: :post, class: "flex-1 border-2 border-indigo-500/100" do%>
+            <%= hidden_field_tag :number, 3 %>
+            <%= image_tag "champion_models/akshan.webp", size: "208"%>
+          <% end %>
+          <%= button_to buy_path, method: :post, class: "flex-1 border-2 border-indigo-500/100" do%>
+            <%= hidden_field_tag :number, 4 %>
+            <%= image_tag "champion_models/aphelios.webp", size: "208"%>
+          <% end %>
+          <%= button_to buy_path, method: :post, class: "flex-1 border-2 border-indigo-500/100" do%>
+            <%= hidden_field_tag :number, 5 %>
+            <%= image_tag "champion_models/ashe.webp", size: "208"%>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
